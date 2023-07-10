@@ -15,12 +15,3 @@ jobs:
         java-version: 17
     - name: Build with Maven
       run: mvn package --file pom.xml
-    - name: Nexus IQ Policy Evaluation
-      uses: sonatype-nexus-community/iq-github-action@master
-      with:
-        serverUrl: http://192.168.15.101:8070
-        username: admin
-        password: Xmart2022
-        applicationId: webgoat
-        stage: Build
-        target: ./Webgoat-1
