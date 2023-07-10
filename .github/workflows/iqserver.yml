@@ -21,6 +21,6 @@ jobs:
         serverUrl: http://192.168.15.101:8070
         username: admin
         password: Xmart2022
-        applicationId: sample-java
+        applicationId: webgoat
         stage: Build
         target: ./Webgoat-1
