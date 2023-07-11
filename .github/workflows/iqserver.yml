@@ -19,11 +19,11 @@ jobs:
         export PATH=$PATH:$(pwd)/nexus-iq-cli/bin
 
         # Run Nexus IQ scan
-        ./nexus-iq-cli 
-          -s http://192.168.15.101:8070 /
-          -a admin:Xmart2022 /
-          -i webgoat /
-          -d ./target /
+        ./nexus-iq-cli \
+          -s http://192.168.15.101:8070 \
+          -a admin:Xmart2022 \
+          -i webgoat \
+          -d ./target \
           -r results.json
 
         # Process the scan results
