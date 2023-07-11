@@ -19,10 +19,10 @@ jobs:
         export PATH=$PATH:$(pwd)/nexus-iq-cli/bin
 
         # Run Nexus IQ scan
-        ./nexus-iq-cli -s http://192.168.15.101:8070 \
+        ./nexus-iq-cli -s http://192.168.15.101:8070
           -a admin
           -p Xmart2022
-          --application-id github
+          -i ./github
           -d ./target
           -r results.json
 
