@@ -16,7 +16,7 @@ jobs:
         # Install Nexus IQ CLI
         curl -o nexus-iq-cli-1.164.0-01+657-unix.zip https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-group/scanner/nexus-iq-cli-1.164.0-01+657-unix.zip
         unzip nexus-iq-cli-1.164.0-01+657-unix.zip
-        export PATH=$PATH:$(pwd)/nexus-iq-cli-1.164.0-01+657-unix/bin
+        export PATH=$PATH:$(pwd)/nexus-iq-cli/bin
 
         # Run Nexus IQ scan
         nexus-iq-cli -s http://192.168.15.101:8070 \
