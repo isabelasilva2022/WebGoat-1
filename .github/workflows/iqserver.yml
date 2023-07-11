@@ -1,10 +1,13 @@
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up JDK 17
       uses: actions/setup-java@v1
       with:
@@ -23,8 +26,7 @@ jobs:
           -a admin \
           -p Xmart2022 \
           -i webgoat \
-          -t build
-          -d ./Webgoat-1 \
+          -d ./target \
           -r results.json
 
         # Process the scan results
