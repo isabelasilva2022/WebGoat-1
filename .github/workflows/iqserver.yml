@@ -23,7 +23,7 @@ jobs:
           -a admin \
           -p Xmart2022 \
           -i webgoat \
-          -t ./Webgoat-1 \
+          -t build
           -r results.json
 
         # Process the scan results
